@@ -23,7 +23,7 @@ var_dump($response);
 
 $response = $telegram->sendMessage([
   'chat_id' => '648005713',
-  'text' => $response1
+  'text' => var_dump($response1)
 ]);
 
 ?>

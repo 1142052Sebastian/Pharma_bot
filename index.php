@@ -1,13 +1,19 @@
 <?php
 
+require 'vendor/autoload.php';
 use Telegram\Bot\Api;
 
-$Telegram = new Api('5931810413:AAGsLStvDSxP9vJ-kxjwE6YmOb83b-2c5Yk');
+$telegram = new Api('5931810413:AAGsLStvDSxP9vJ-kxjwE6YmOb83b-2c5Yk');
 
 $response = $telegram->getMe();
 
 $botId = $response->getId();
 $firstName = $response->getFirstName();
 $username = $response->getUsername();
+
+$response = $telegram->sendMessage([
+  'chat_id' => '648005713',
+  'text' => ' Prova da git'
+]);
 
 ?>

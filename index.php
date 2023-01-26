@@ -13,7 +13,7 @@ $username = $response->getUsername();
 
 $response = $telegram->sendMessage([
   'chat_id' => '648005713',
-  'text' => ' Prova da git'
+  'text' => ' Id del bot = '.$botId
 ]);
 
 ?>

@@ -14,6 +14,6 @@ $username = $response->getUsername();
 
 $response = $telegram->sendMessage([
   'chat_id' => '648005713',
-  'text' => $telegram->getUpdates()
+  'text' => 'test 2' 
 ]); 
 ?>
